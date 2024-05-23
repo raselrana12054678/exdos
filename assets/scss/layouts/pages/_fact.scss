@@ -1,0 +1,79 @@
+@use '../../utils' as *;
+
+
+.rs-fact-area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.rsfact-area {
+    @media #{$xs} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+.customer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rsfact {
+    margin-bottom: 30px;    
+    &__icon {
+        @media #{$xs} {
+            justify-content: center;
+            display: flex;
+        }
+        & i {
+            font-size: 110px;
+            color: var(--rs-theme-sec-color);
+        }
+    }
+    &__text {
+        @media #{$xs} {
+            text-align: center;
+        }
+        & span {
+            font-size: 100px;
+            font-weight: 400;
+            font-family: var(--rs-fonts-heading);
+            display: inline-block;
+            line-height: 1;
+            color: #fff;
+            @media #{$md} {
+                font-size: 80px;
+            }
+            @media #{$xs} {
+                font-size: 60px;
+            }
+        }
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 400;
+        font-family: var(--rs-fonts-heading);
+        color: #fff;
+        opacity: 50%;
+        @media #{$md} {
+            font-size: 20px;
+        }
+        @media #{$xs} {
+            font-size: 22px;
+        }
+        @media #{$sm} {
+            font-size: 30px;
+        }
+    }
+    &-2 {
+        & .rsfact__icon {
+            & span {
+                & i {
+                    color: #57595C;
+                }
+            }
+        }
+        
+        & .rsfact__title {
+            font-size: #0A0E1A;
+        }
+    }
+}

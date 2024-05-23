@@ -1,0 +1,55 @@
+@use '../utils' as *;
+
+.accordion-image {
+    & img {
+        max-width: 100%;
+    }
+}
+.accordion-header {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--rs-fonts-heading);
+    line-height: 30px;
+    color: #0A0E1A;
+}
+.rs-accordion-item {
+    border: 1px solid #57595C;
+    padding: 30px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.accordion-button {
+    padding: 0;
+}
+.accordion-body {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--rs-fonts-body);
+    color: #57595C;
+    line-height: 28px;
+    padding: 0;
+    padding-top: 20px;
+}
+.accordion-button:not(.collapsed) {
+     color: none; 
+     background-color: transparent; 
+     box-shadow: none; 
+     border-bottom: 1px solid #57595C;
+     padding-bottom: 30px;
+}
+.accordion-button:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.accordion-button::after {
+    content: "\f061";
+    font-weight: 700;
+    background-image: none;
+    width: auto;
+    height: auto;
+    color: red;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}   

@@ -1,0 +1,28 @@
+@use '../../utils' as *;
+
+.rs-contact-form-area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.rsform-title {
+    font-size: 30px;
+}
+.contact-form-box {
+    & input ,& textarea {
+        border-color: #57595C;
+        @media #{$xs} {
+            margin-bottom: 0;
+        }
+        &::placeholder {
+            color: #000;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: var(--rs-fonts-body);
+        }
+    }
+}
+.col-mb-12 {
+    @media #{$lg} {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,66 @@
+@use '../utils' as *;
+
+.rs-section-title-wrapper {
+    & p {
+        & br {
+            @media #{$xs,$md} {
+                display: none;
+            }
+        }
+    }
+}
+.rs-section {
+    &-subtitle {
+        font-size: 15px;
+        font-weight: 500;
+        color: #57595C;
+        text-transform: uppercase;
+        display: block;
+        & i {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--rs-theme-color);
+            display: inline-block;
+            margin-right: 6px;
+        }
+    }
+    &-title {
+        font-size: 60px;
+        font-weight: 400;
+        @media #{$lg} {
+            font-size: 54px;
+        }
+        @media #{$lg,$md} {
+            font-size: 40px;
+        }
+        @media #{$xs} {
+            font-size: 28px;
+        }
+        & br {
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$md} {
+                display: none;
+            }
+        }
+        &-white {
+            color: #fff;
+        }
+    }
+}
+.rs-section-title1 {
+    font-size: 60px;
+    font-family: var(--rs-fonts-heading);
+    font-weight: 400;
+    @media #{$lg} {
+        font-size: 41px;
+    }
+    @media #{$md,$xs} {
+        font-size: 30px;
+    }
+    &-white {
+        color: #fff;
+    }
+}

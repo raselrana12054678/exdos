@@ -1,0 +1,213 @@
+@use '../../utils' as *;
+
+
+.rs-testimonial-area {
+    @media #{$xs,$md} {
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+}
+.rs-testimonial {
+    &-desc {
+        font-family: var(--rs-fonts-heading);
+        font-weight: 400;
+        font-size: 100px;
+        @media #{$xl} {
+            font-size: 87px;
+        }
+        @media #{$lg} {
+            font-size: 62px;
+        }
+        @media #{$md} {
+            font-size: 54px;
+            margin-bottom: 60px;
+        }
+        @media #{$xs} {
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+    }
+    &-name {
+        font-size: 30px;
+        font-weight: 400;
+        font-family: var(--rs-fonts-heading);
+        color: var(--rs-heading-color);
+        @media #{$xs} {
+            font-size: 20px;
+        }
+    }
+    &-desig {
+        font-size: 17px;
+        font-weight: 400;
+        font-family: var(--rs-fonts-body);
+        color: var(--rs-body-text);
+        margin-left: 90px;
+        @media #{$xs} {
+            font-size: 14px;
+        }
+        & span {
+            width: 60px;
+            height: 1px;
+            background-color: var(--rs-body-text);
+            display: inline-block;
+            transform: translateY(-4px);
+        }
+    }
+}
+
+.rs-section-title-wrapper {
+    & p {
+        @media #{$xs} {
+            font-size: 15px;
+        }
+        & br {
+            @media #{$xs} {
+                display: none;
+            }
+        }
+    }
+}
+
+.rs-testimonial-shape {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    @media #{$lg,$md,$xs} {
+        top: 0;
+    }
+}
+
+.rs-testimonial-shape-thumb-1 {
+    top: 20%;
+    @media #{$xl} {
+        top: 9%;
+    }
+    @media #{$lg} {
+        top: 12%;
+    }
+}
+.rs-testimonial-shape-thumb-2{
+    right: 0;
+    margin-top: 51px;
+}
+.rs-swiper-testm-button-next {
+    position: absolute;
+    top: 31%;
+    left: -100px;
+    transform: rotate(180deg);
+    z-index: 12;
+    &:hover {
+        @media #{$xxlm,$xl,$lg,$md} {
+            background-color: var(--rs-theme-sec-color);
+            color: var(--rs-theme-color);
+        }
+    }
+    @media #{$md} {
+        top: 88px;
+        left: -32px;
+        background-color: var(--rs-theme-color);
+        padding: 5px 9px;
+        color: #fff;
+        border-radius: 11px;
+    }
+    @media #{$xl} {
+        top: 89%;
+        left: 0;
+        background-color: var(--rs-theme-color);
+        padding: 5px 9px;
+        color: #fff;
+        border-radius: 11px;
+    }
+    @media #{$xxlm,$lg} {
+        top: inherit;
+        left: 0;
+        background-color: var(--rs-theme-color);
+        padding: 5px 9px;
+        color: #fff;
+        border-radius: 11px;
+        margin-top: 30px;
+    }
+    @media #{$xs} {
+        position: static;
+        display: inline-block;
+        margin-left: -100px;
+        margin-top: 40px;
+    }
+    & i {
+        font-size: 52px;
+        @media #{$xs} {
+            font-size: 40px;
+        }
+        @media #{$md} {
+            font-size: 30px;
+        }
+    }
+}
+.rs-swiper-testm-button-prev {
+    position: absolute;
+    top: 31%;
+    right: -100px;
+    z-index: 12;
+    &:hover {
+        @media #{$xxlm,$xl,$lg,$md} {
+            background-color: var(--rs-theme-sec-color);
+            color: var(--rs-theme-color);
+        }
+    }
+    @media #{$xxlm} {
+        top: inherit;
+        right: inherit;
+        bottom: 0;
+        background-color: var(--rs-theme-color);
+        padding: 5px 9px;
+        color: #fff;
+        border-radius: 11px;
+        margin-left: 6%;
+    }
+    @media #{$xl} {
+        top: inherit;
+        right: inherit;
+        bottom: 0;
+        background-color: var(--rs-theme-color);
+        padding: 5px 9px;
+        color: #fff;
+        border-radius: 11px;
+        margin-left: 8%;
+    }
+    @media #{$lg} {
+        top: inherit;
+        right: inherit;
+        bottom: 0;
+        background-color: var(--rs-theme-color);
+        padding: 5px 9px;
+        color: #fff;
+        border-radius: 11px;
+        margin-left: 9%;
+    }
+    @media #{$md} {
+        top: 88px;
+        right: -32px;
+        background-color: var(--rs-theme-color);
+        padding: 5px 9px;
+        color: #fff;
+        border-radius: 11px;
+        margin-left: 0%;
+    }
+    @media #{$xs} {
+        position: static;
+        display: inline-block;
+    }
+    & i {
+        font-size: 52px;
+        transform: rotate(180deg);
+        @media #{$xs} {
+            font-size: 40px;
+        }
+        @media #{$md} {
+            font-size: 30px;
+        }
+    }
+}

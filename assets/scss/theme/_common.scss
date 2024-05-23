@@ -1,0 +1,114 @@
+@use '../utils' as *;
+
+.w-img{
+	& img{
+		width: 100%;
+	}
+}
+.m-img{
+	& img{
+		max-width: 100%;
+	}
+}
+img {
+	max-width: 100%;
+}
+
+.fix {
+    overflow:hidden;
+}
+.clear{
+    clear: both;
+}
+
+.z-index-1{
+	z-index: 1;
+}
+
+.z-index-11{
+	z-index: 11;
+}
+
+.overflow-y-visible{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.overflow-x-visible{
+	overflow-x: visible;
+	overflow-y: hidden;
+}
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+.bdr-rds {
+	& img {
+		border-radius: 20px;
+	}
+}
+.bdr-btm {
+	border-bottom: 1px solid rgba(255,255,255, .15);
+	display: inline-block;
+}
+
+.rs-black-bg {
+	background-color: var(--rs-common-black);
+}
+.rs-blue-bg {
+	background-color: var(--rs-theme-color);
+}
+.rs-nblue-bg {
+	background-color: var(--rs-theme-nblue);
+}
+.rs-yellow-bg {
+	background-color: var(--rs-theme-sec-color);
+}
+/* service css */
+.br-24 {
+	border-radius: 24px;
+}
+
+//**brand transiton css **//
+
+.rs-slide-transtion {
+	-webkit-animation-timing-function: linear;
+	transition-timing-function: linear;
+}
+.rs-brand-slide-element {
+	width: auto;
+	display: inline-block;
+}
+
+.rs-nblue-bg-white {
+	background-color: var(--rs-theme-color);
+	color: #fff;
+}
+.rs-cream-bg {
+	background-color: var(--rs-cream-bgdn);
+}
+.rs-theme-black-bg {
+	background-color: var(--rs-heading-color);
+}
+.fs-100 {
+	font-size: 100px;
+	@media #{$xl} {
+        font-size: 88px;
+    }
+	@media #{$lg} {
+		font-size: 79px;
+	}
+	@media #{$xs} {
+		font-size: 70px;
+	}
+}
+
+.rs-rot-180 {
+	transform: rotate(180deg);
+}
+
+.rs-upper {
+	text-transform: uppercase;
+}

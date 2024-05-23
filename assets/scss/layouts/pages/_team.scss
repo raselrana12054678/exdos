@@ -1,0 +1,205 @@
+@use '../../utils' as *;
+
+
+.rs-team-area {
+    @media #{$xl,$lg,$md} {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media #{$md} {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @media #{$xs} {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+}
+.rs-team-navg {
+    display: inline-block;
+    @media #{$xs} {
+        margin-bottom: 25px;
+    }
+    & i {
+        font-size: 52px;
+    }
+    .rs-swiper-team-button-next {
+        @media #{$xl} {
+            position: absolute;
+            right: 34%;
+        }
+    }
+    .rs-swiper-team-button-prev {
+        @media #{$xxlm} {
+            transform: translateY(4px);
+        }
+    }
+}
+
+.rsteam {
+    &__thumb {
+        @media #{$xs} {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        & img {
+            border-radius: 15px;
+            @media #{$xs} {
+                width: 100%;
+            }
+        }
+    }
+    &__info {
+        @media #{$xxlm} {
+            margin-left: 18px;
+        }
+        @media #{$xl} {
+            margin-left: 18px;
+        }
+        @media #{$lg} {
+            margin-left: 55px;
+        }
+        @media #{$md} {
+            margin-left: 30px;
+        }
+        @media #{$xs} {
+            margin-left: 50px;
+        }
+        @media #{$sm} {
+            text-align: center;
+            margin-left: 0;
+        }
+        & span {
+            margin-top: 8px;
+            margin-left: 120px;
+            font-size: 17px;
+            font-weight: 400;
+            font-family: var(--rs-fonts-body);
+            line-height: 28px;
+            @media #{$xxlm} {
+                margin-left: 60px;
+            }
+            @media #{$xl} {
+                margin-left: 10px;
+            }
+            @media #{$lg} {
+                margin-left: 16px;
+            }
+            @media #{$md} {
+                margin-left: 50px;
+            }
+            @media #{$xs} {
+                margin-left: 80px;
+            }
+            & i {
+                width: 60px;
+                height: 1px;
+                background-color: #D6D6D1; 
+                display: inline-block;
+                margin-right: 10px;
+                transform: translateY(-4px);
+                @media #{$md} {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    &__title {
+        margin-top: 30px;
+        & a {
+            @media #{$lg,$xs} {
+                font-size: 25px;
+            }
+        }
+    }
+    &__social {
+        @media #{$lg,$md} {
+            margin-top: 7px;
+        }
+        @media #{$xs} {
+            margin-left: 75px;
+            margin-top: 7px;
+        }
+        @media #{$sm} {
+            margin-left: 0;
+        }
+        & a {
+            & i {
+                margin-right: 18px;
+                font-size: 24px;
+                font-weight: 400;
+                color: #0A0E1A;
+                transition: .7s;
+                @media #{$lg,$md,$xs} {
+                    font-size: 17px;
+                }
+                
+                &:hover {
+                    color: #0057FC;
+                }
+            }
+        }
+    }
+}
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+    transform: translateY(20px);
+    margin-right: 10px;
+}
+
+// rsteams-h-2 
+.rsteams {
+    position: relative;
+    &__images {
+        & img {
+            max-width: 100%;
+            position: relative;
+            &::before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgb(52, 235, 192);
+            }
+        }
+    }
+    &__social {
+        content: "";
+        top: 0;
+        width: 100%;
+        height: 84%;
+        display: flex;
+        align-items: center;     
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        & a {
+            & i {
+                color: #0A0E1A;
+                font-size: 22px;
+                padding: 16px 14px;
+                background-color: #fff;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+    &__content {
+        & span {
+
+        }
+    }
+    &__title {
+        & a {
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 40px;
+        }
+    }
+}

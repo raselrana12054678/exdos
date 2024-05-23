@@ -1,0 +1,125 @@
+@use '../../utils' as *;
+
+
+.rs-about-area {
+    @media #{$xs} {
+        background-size: cover;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media #{$md} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+.rs-about-box {
+    @media #{$lg,$md,$xs} {
+        padding-left: 0;
+    }
+}
+.rs-about-video {
+    @media #{$xl} {
+        padding-left: 60px;
+    }
+    @media #{$lg,$md,$xs} {
+        padding-left: 0;
+    }
+    &-icon {
+        & a {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #57595C;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 76px;
+            display: inline-block;
+        }
+    }
+    & h4 {
+        font-size: 30px;
+        color: #57595C;
+        @media #{$xs} {
+            font-size: 22px;
+        }
+    }
+}
+
+.rs-about-img {
+    @media #{$lg,$md,$xs} {
+        padding-left: 0;
+    }
+    @media #{$xs} {
+        margin-bottom: 50px;
+        padding-top: 0px;
+    }
+    @media #{$md} {
+        margin-bottom: 30px;
+    }
+}
+
+.rs-about-btn {
+    @media #{$xs} {
+        margin-bottom: 30px;
+    }
+}
+.rs-about-shape-1 {
+    top: 26%;
+    left: 0;
+    @media #{$lg} {
+        top: 20%;
+        left: -166px;
+    }
+    @media #{$md} {
+        top: 11%;
+        left: -130px;
+    }
+}
+.rs-about-shape-2 {
+    top: 43%;
+    left: 33%;
+    @media #{$md} {
+        top: 18%;
+        left: 4%;
+    }
+}
+.rs-about-shape-3 {
+    top: 0;
+    right: 0;  
+}
+
+
+.rs-about {
+    &-content {
+        & p {
+
+        }
+    }
+    &-list {
+        & ul {
+            & li {
+                margin-bottom: 23px;
+                & i {
+                    font-size: 30px;
+                    color: #0A0E1A;
+                    font-weight: 300;
+                    margin-right: 10px;
+                }
+                & span {
+                    font-size: 30px;
+                    line-height: 1.33;
+                    font-family: var(--rs-fonts-heading);
+                    color: #0A0E1A;
+                }
+            }
+        }
+    }
+}
+
+.rs-about-circle-img {
+    position: absolute;
+    right: 185px;
+    top: 0;
+    & img {
+        max-width: inherit;
+    }
+}
